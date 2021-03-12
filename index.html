@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+     CRUD JAVASCRIP
+    </title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="c">
+<h2>Registro De Estudiantes</h2>
+<p>En esta app podras registrar estudiantes usando ciertos campos, actualizar esos datos , borrarlos,agregando datos, y visualizando el total de estudiantes ingresados</p>
+</div>
+
+  
+<img src="crud-rails-1.png" alt="Trulli" width="500" height="333" class="center">
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre completo*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>codigo estudiante</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>salario</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>ciudad</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="alumnList">
+                    <thead>
+                        <tr>
+                            <th>Nombre completo</th>
+                            <th>codigo de estudiante</th>
+                            <th>salario</th>
+                            <th>ciudad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
